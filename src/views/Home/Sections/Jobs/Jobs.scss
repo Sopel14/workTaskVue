@@ -1,0 +1,14 @@
+.section-jobs{
+
+  .ui-btn--pink{
+  
+    &:hover {
+      color: $white;
+      background: #666;
+    }
+  }
+
+  .slick-slide{
+    padding: 1rem !important;
+  }
+}

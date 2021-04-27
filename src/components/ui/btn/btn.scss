@@ -1,0 +1,31 @@
+.ui-btn{
+    background: none;
+    border: none;
+    outline: none !important;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition-duration: 0.2s;
+
+    &--pink{
+        background: $pink;
+        color: $white;
+
+        &:hover{
+            color: $pink;
+            background: $white;
+        }
+    }
+
+    &--default{
+        background: #ccc;
+        color: #333;
+
+        &:hover{
+            background: $white;
+        }
+    }
+}

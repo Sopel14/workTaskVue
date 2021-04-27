@@ -1,0 +1,79 @@
+.app-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background: #333;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .logo {
+      width: 3rem;
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &:hover {
+        color: $pink;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+
+    .ui-btn {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.2rem 0;
+    margin-top: 0.5rem;
+    width: 100%;
+
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      font-weight: 700;
+
+      li, a {
+        color: $white;
+        padding: 0 0.5rem;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+          color: $pink;
+        }
+
+        &:last-of-type {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.section-hmrc-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  background: #f7f7f7;
+
+  &__header {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+    background: #f1f1f1;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition-duration: 0.2s;
+    cursor: pointer;
+
+    &__ico {
+      height: 2.5rem;
+      width: 2.5rem;
+      margin-right: 1rem;
+
+      i {
+        font-size: 2.5rem;
+        color: #018684;
+      }
+    }
+
+    &__content {
+      text-transform: uppercase;
+      color: #018684;
+      font-weight: 700;
+    }
+
+    &:hover {
+      background: #dedede;
+
+      .link__content {
+        color: #666;
+      }
+    }
+  }
+}
